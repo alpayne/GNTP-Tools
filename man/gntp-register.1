@@ -1,0 +1,71 @@
+.TH GNTP-REGISTER 1 "October 12, 2011" "GNTP User Manuals" "Version 1.0"
+.SH NAME
+.PP
+gntp-register - send Growl Notification Transport Protocol register
+requests
+.SH SYNOPSIS
+.PP
+gntp-notify [-s] [-H \f[I]host\f[][:\f[I]port\f[]]] [-P
+\f[I]password\f[]] [-p \f[I]priority\f[]] -a \f[I]application\f[] -n
+\f[I]notification\f[] -t \f[I]title\f[] -m \f[I]message\f[]
+.SH DESCRIPTION
+.PP
+gntp-register registers applications and notifications with Growl to
+enable gntp-notify messages to be displayed.
+.PP
+Applications are message source.
+Typically they are identified in Growl by the application's common name.
+Since gntp-notify sends notifications on behalf of other processes, this
+name can be any descriptive name identifying the message source.
+.PP
+Notifications in Growl identify the class of message being sent.
+They are short names such as \[lq]File updated\[rq], or \[lq]New
+message\[rq].
+From a Growl user perspective, notifications allow more granular format
+control for messages.
+Multiple notification names can be registered.
+.SH OPTIONS
+.TP
+.B -a \f[I]application\f[]
+Name of the application to register.
+.RS
+.RE
+.TP
+.B -H \f[I]host\f[][:\f[I]port\f[]]
+Host to send the notification message to.
+Defaults to localhost if blank.
+Port may also be defined if using a non-standard listening port on the
+client.
+.RS
+.RE
+.TP
+.B -n \f[I]notification\f[]
+Name of the notification to register.
+Multiple notifications may be registered using multiple -n options.
+.RS
+.RE
+.TP
+.B -P \f[I]password\f[]
+Password of the receiving Growl client.
+.RS
+.RE
+.SH STANDARDS
+.PP
+gntp-register sends Growl Notification Transfer Protocol version 1.0
+transactions.
+.SH SECURITY CONSIDERATIONS
+.PP
+gntp-register does not used GNTP encryption.
+Users should be aware that any information sent in the notification is
+transmitted in the clear.
+.SH AUTHOR
+.PP
+Al Payne <alpayne@pleiades.com>
+.SH COPYRIGHT
+.PP
+BSD license
+.SH SEE ALSO
+.PP
+gntp-notify
+.SH AUTHORS
+Al Payne.

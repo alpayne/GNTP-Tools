@@ -1,0 +1,90 @@
+.TH GNTP-NOTIFY 1 "October 12, 2011" "GNTP User Manuals" "Version 1.0"
+.SH NAME
+.PP
+gntp-notify - Growl Notification Transport Protocol notifier
+.SH SYNOPSIS
+.PP
+gntp-notify [-s] [-H \f[I]host\f[][:\f[I]port\f[]]] [-P
+\f[I]password\f[]] [-p \f[I]priority\f[]] -a \f[I]application\f[] -n
+\f[I]notification\f[] -t \f[I]title\f[] -m \f[I]message\f[]
+.SH DESCRIPTION
+.PP
+Send notification messages to Growl.
+Applications must register (see gntp-register) with Growl before
+notifications will be displayed.
+.SH OPTIONS
+.TP
+.B -a \f[I]application\f[]
+Name of the application sending the notice.
+Must match a previously registered application name.
+.RS
+.RE
+.TP
+.B -H \f[I]host\f[][:\f[I]port\f[]]
+Host to send the notification message to.
+Defaults to localhost if blank.
+Port may also be defined if using a non-standard listening port on the
+client.
+.RS
+.RE
+.TP
+.B -m \f[I]message\f[]
+The message text to be displayed on the Growl client.
+.RS
+.RE
+.TP
+.B -n \f[I]notification\f[]
+Name of the notification as defined in Growl.
+Must match a previously registered notification name.
+.RS
+.RE
+.TP
+.B -P \f[I]password\f[]
+Password of the receiving Growl client.
+.RS
+.RE
+.TP
+.B -p \f[I]priority\f[]
+Optional priority level for the message.
+A higher number indicates a higher priority.
+Valid values are between \[en]2 and 2, with a default of 0.
+In Growl this translates to \[lq]Very Low\[rq], \[lq]Moderate\[rq],
+\[lq]Normal\[rq], \[lq]High\[rq], \[lq]Emergency\[rq].
+This is a display hint for the Growl display which may be ignored.
+.RS
+.RE
+.TP
+.B -s
+Display hint asking the Growl display to make the message sticky (stay
+up until clicked).
+May be ignored.
+.RS
+.RE
+.TP
+.B -t \f[I]title\f[]
+The title of the message to be displayed on the Growl client.
+.RS
+.RE
+.SH STANDARDS
+.PP
+gntp-notify sends Growl Notification Transfer Protocol version 1.0
+transactions.
+.SH SECURITY CONSIDERATIONS
+.PP
+gntp-notify does not used GNTP encryption.
+Users should be aware that any information sent in the notification is
+transmitted in the clear.
+.SH HISTORY
+.PP
+gntp-notify was originall based on mattn's gntp-send.
+.SH AUTHOR
+.PP
+Al Payne <alpayne@pleiades.com>
+.SH COPYRIGHT
+.PP
+Copyright 2011 - Al Payne - Licensed under the BSD license
+.SH SEE ALSO
+.PP
+gntp-register
+.SH AUTHORS
+Al Payne.
