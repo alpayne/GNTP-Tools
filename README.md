@@ -1,6 +1,6 @@
 # Growl GNTP-Tools
 
-Tools for sending notification messages to Growl clients using [GNTP v1.0](ihttps://github.com/alpayne/Growl-GNTP-Tools/blob/master/docs/GNTP-v1.0.md).
+Tools for sending notification messages to Growl clients using [GNTP v1.0](https://github.com/alpayne/Growl-GNTP-Tools/blob/master/docs/GNTP-v1.0.md).
 
 ## Instructions:
 
