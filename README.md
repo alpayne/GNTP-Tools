@@ -1,6 +1,8 @@
 # Growl GNTP-Tools
 
-Tools for sending notification messages to Growl clients using [GNTP v1.0](https://github.com/alpayne/Growl-GNTP-Tools/blob/master/docs/GNTP-v1.0.md).
+Tools for sending notification messages to _Growl_ (Mac) and _Growl for Windows_ clients using [GNTP v1.0](https://github.com/alpayne/Growl-GNTP-Tools/blob/master/docs/GNTP-v1.0.md).
+
+Works with Growl 1.3.
 
 ## Instructions:
 
@@ -9,7 +11,7 @@ Tools for sending notification messages to Growl clients using [GNTP v1.0](https
 
 ## Binaries
 
-Binaries are (or will be) in the binaries directory.
+Binaries for OSX, Linux (lib32 and lib64), and Windows are in the [binaries directory]((https://github.com/alpayne/Growl-GNTP-Tools/tree/master/binaries).
 
 ## Issues
 
