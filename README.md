@@ -11,7 +11,7 @@ Works with Growl 1.3.
 
 ## Binaries
 
-Binaries for OSX, Linux (lib32 and lib64), and Windows are in the [binaries directory]((https://github.com/alpayne/Growl-GNTP-Tools/tree/master/binaries).
+Binaries for OSX, Linux (lib32 and lib64), and Windows are in the [binaries directory](https://github.com/alpayne/Growl-GNTP-Tools/tree/master/binaries).
 
 ## Issues
 
