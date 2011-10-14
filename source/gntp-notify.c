@@ -131,10 +131,10 @@ int main(int argc, char* argv[]) {
 	int rc;
 	char* host = "127.0.0.1";
 	char* password = NULL;
-	char* appname = "gntp-notify";
+	char* appname = NULL;
 	char* notification = NULL;
-	char* title = NULL;
-	char* message = NULL;
+	char* title = "";
+	char* message = "";
 	char* icon = NULL;
 	char* url = NULL;
 	char* sticky = NULL;
@@ -171,9 +171,11 @@ int main(int argc, char* argv[]) {
 	if ( !appname || !notification || !title || !message ) 
 		errorcode = 1;
 
+	// the string_to_utf8_allocs must always be done to ensure frees at exit don't cause problems.
+	title = string_to_utf8_alloc(title);
+	message = string_to_utf8_alloc(message);
+
 	if (errorcode ==0) {
-		title = string_to_utf8_alloc(title);
-		message = string_to_utf8_alloc(message);
 	
 		growl_init();	
 		if (tcpsend) {
