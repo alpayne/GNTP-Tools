@@ -184,7 +184,7 @@ int main(int argc, char* argv[]) {
 		growl_shutdown();
 	}
 	if (errorcode==1) {
-		fprintf (stderr,  "%s: [-s] [-p priority] [-H HOST:PORT] [-P PASSWORD] -a application -n notification -t title -m message\n", argv[0]);
+		fprintf (stderr,  "%s: [-s] [-p priority] [-H host:port] [-P password] -a application -n notification -t title -m message\n", argv[0]);
 		rc = 1;
 	}
 	if (title) free(title);

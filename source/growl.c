@@ -360,37 +360,3 @@ int growl_udp( const char *const server,const char *const appname,const char *co
 	(void)icon; (void)url; /* prevent unused warnings */
 }
 
-
-#ifdef _WIN32
-
-static void GrowlNotify_impl_(HWND hwnd, HINSTANCE hinst, LPSTR lpszCmdLine, int nCmdShow) {
-	char* server = "127.0.0.1:23053";
-	char* password = NULL;
-	char* appname = "gntp-send";
-	char* notify = "gntp-send notify";
-	char* title = NULL;
-	char* message = NULL;
-	char* icon = NULL;
-	char* url = NULL;
-	char* first = strdup(lpszCmdLine);
-	char* ptr = first;
-	#define SKIP(x)	while (*x && *x != ' ') x++; if (*x == ' ') *x++ = 0;
-	server = ptr;  SKIP(ptr);
-	appname = ptr; SKIP(ptr);
-	notify = ptr;  SKIP(ptr);
-	title = ptr;   SKIP(ptr);
-	message = ptr; SKIP(ptr);
-	icon = ptr;    SKIP(ptr);
-	url = ptr;     SKIP(ptr);
-	growl(server,appname,notify,title,message,icon,password,url);
-	free(first);
-}
-
-void GrowlNotify(HWND hwnd, HINSTANCE hinst, LPSTR lpszCmdLine, int nCmdShow) {
-	WSADATA wsaData;
-	if (WSAStartup(MAKEWORD(2, 0), &wsaData) != 0) return;
-	GrowlNotify_impl_(hwnd, hinst, lpszCmdLine, nCmdShow);
-	WSACleanup();
-}
-#endif
-

@@ -19,13 +19,8 @@ set( GROWL_NTP_C_SRC
         source/tcp.c
         source/md5.c )
 
-add_library( growl SHARED  ${GROWL_NTP_C_SRC} )
-set_target_properties( growl PROPERTIES COMPILE_FLAGS "-DGROWL_DLL" )
-
-if( WITH_STATIC )
-  add_library( growl-static  STATIC ${GROWL_NTP_C_SRC} )
-  set_target_properties( growl-static PROPERTIES COMPILE_FLAGS "-DGROWL_DLL" )
-endif( WITH_STATIC )
+add_library( growl STATIC  ${GROWL_NTP_C_SRC} )
+set_target_properties( growl PROPERTIES COMPILE_FLAGS "" )
 
 add_executable( gntp-notify source/gntp-notify.c )
 target_link_libraries ( gntp-notify growl)
