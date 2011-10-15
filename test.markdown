@@ -1,5 +1,6 @@
 ---
 title: alpayne/Growl-GNTP-Tools @ GitHub
+layout: default
 ---
 
 # Growl-GNTP-Tools
