@@ -18,9 +18,7 @@ Growl and Growl for Windows can display messages received via the Growl Notifica
 You can download this project in either [zip](http://github.com/alpayne/Growl-GNTP-Tools/zipball/master) or
 [tar](http://github.com/alpayne/Growl-GNTP-Tools/tarball/master) formats.
 
-<div class="footer">
 get the source code on GitHub : [alpayne/Growl-GNTP-Tools](http://github.com/alpayne/Growl-GNTP-Tools)
-</div>
 
 
 <!-- Google Analytics code -->
