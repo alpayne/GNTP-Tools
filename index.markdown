@@ -5,6 +5,8 @@ pkglicense:  GNTP-Tools is licensed under the BSD License. &copy; 2011, Al Payne
 license: This page is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
 layout: default
 ---
+
+
 GNTP is a protocol for sending notification messages to Growl. GNTP-Tools is a pair of command line utilities for sending messages from Linux, OS X, and Windows hosts to remote machines running [Growl](http://growl.info) and [Growl for Windows](http://www.growlforwindows.com/gfw/).
 
 Before Growl will display incoming notifications, the application must first be registered using ```gntp-register```. The registration message sets the application's name and the notifications it may send.  Notifications that don't correspond to previously registered application/notification pairs will not be displayed.
@@ -13,20 +15,20 @@ After registering, the application may send _notify_ requests with ```gntp-notif
 
 ## Downloads
 
-Binaries can be found in the project [binaries directory](https://github.com/alpayne/Growl-GNTP-Tools/tree/master/binaries) on Github.
+Binaries can be found in the project [binaries directory](https://github.com/alpayne/GNTP-Tools/tree/master/binaries) on Github.
 
-The source code can be cloned from GitHub : [alpayne/Growl-GNTP-Tools](http://github.com/alpayne/Growl-GNTP-Tools), 
-or downloaded as a [zip](http://github.com/alpayne/Growl-GNTP-Tools/zipball/master) or
-[tar](http://github.com/alpayne/Growl-GNTP-Tools/tarball/master) archive.
+The source code can be cloned from GitHub : [alpayne/GNTP-Tools](http://github.com/alpayne/GNTP-Tools), 
+or downloaded as a [zip](http://github.com/alpayne/GNTP-Tools/zipball/master) or
+[tar](http://github.com/alpayne/GNTP-Tools/tarball/master) archive.
 
-A markdown verion of the [GNTP v1.0 specification](https://github.com/alpayne/Growl-GNTP-Tools/blob/master/docs/GNTP-v1.0.md) is also in the repository. This version has been edited to reorder some sections and make some minor corrections.
+A markdown verion of the [GNTP v1.0 specification](https://github.com/alpayne/GNTP-Tools/blob/master/docs/GNTP-v1.0.md) is also in the repository. This version has been edited to reorder some sections and make some minor corrections.
 
 ## Man pages
 
 Man pages are available with the binaries above, or online:
 
-* [gntp-register](https://github.com/alpayne/Growl-GNTP-Tools/blob/master/docs/gntp-register.md)
-* [gntp-notify](https://github.com/alpayne/Growl-GNTP-Tools/blob/master/docs/gntp-notify.md)
+* [gntp-register](https://github.com/alpayne/GNTP-Tools/blob/master/docs/gntp-register.md)
+* [gntp-notify](https://github.com/alpayne/GNTP-Tools/blob/master/docs/gntp-notify.md)
 
 ## Example
 
