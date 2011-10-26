@@ -15,7 +15,7 @@ After registering, the application may send _notify_ requests with ```gntp-notif
 
 ## Downloads
 
-Binaries can be found in the project [binaries directory](https://github.com/alpayne/GNTP-Tools/tree/master/binaries) on Github.
+Binaries can be found on the project [Downloads tab](https://github.com/alpayne/GNTP-Tools/tree/master/binaries).
 
 The source code can be cloned from GitHub : [alpayne/GNTP-Tools](http://github.com/alpayne/GNTP-Tools), 
 or downloaded as a [zip](http://github.com/alpayne/GNTP-Tools/zipball/master) or
